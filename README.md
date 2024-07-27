@@ -50,7 +50,7 @@ qa_yandex_practicum/
 
 ## Задачи по репозиторию
 
-- [ ] Написать README.md файл
+- [x] Написать README.md файл
 - [ ] Решить [дополнительное задание 1](qa_python_1/additional_task_1.py) в спринте "Основы Python"
 
 ## Задания проектов
