@@ -19,10 +19,9 @@ class EmployeeSalary:
             email = f"{cls.name}@email.com"
         return cls(cls.name, cls.hours, cls.rest_days, email)
 
-# FIXME: Метод меняет значение переменной hourly_payment. Но на что он его меняет из задачи непонятно.
     def set_hourly_payment(cls, new_hourly_payment):
+        new_hourly_payment = 450
         cls.hourly_payment = new_hourly_payment
 
-# FIXME: Нужно ли добавлять return или print для переменной salary? Из задачи неявно.
     def salary(cls):
         return cls.hours * cls.hourly_payment

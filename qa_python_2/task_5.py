@@ -15,7 +15,7 @@ class Football(Results):
         return f"Футбольных поражений: {self.draws}"
     
     def total_points(self):
-        return f"Общее количество очков: {{{3 * self.victories + self.draws}}}"
+        return f"Общее количество очков: {3 * self.victories + self.draws}"
     
 class Hockey(Results):
     def number_of_wins(self):
@@ -28,7 +28,7 @@ class Hockey(Results):
         return f"Хоккейных поражений: {self.losses}"
     
     def total_points(self):
-        return f"Общее количество очков: {{{2 * self.victories + self.draws}}}"
+        return f"Общее количество очков: {2 * self.victories + self.draws}"
     
 football_team = Football(2, 2, 2)
 hockey_team = Hockey(2, 2, 2)
