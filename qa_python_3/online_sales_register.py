@@ -95,7 +95,7 @@ class OnlineSalesRegisterCollector:
         try:
             if not isinstance(telephone_number, int):
                 raise ValueError('Необходимо ввести цифры')
-            elif len(str(telephone_number)) > 10:     # Есть мысль, что нужно использовать != вместо >, но в задании указана именно такая проверка
+            elif len(str(telephone_number)) != 10:
                 raise ValueError('Необходимо ввести 10 цифр после "+7"')
             else:
                 return f"+7{telephone_number}"
@@ -119,5 +119,3 @@ class OnlineSalesRegisterCollector:
             date_and_time.append(f"{name}: {func(now)}")
             
         return date_and_time
-    
-print(OnlineSalesRegisterCollector.get_date_and_time())
